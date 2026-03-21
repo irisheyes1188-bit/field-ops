@@ -1,0 +1,6 @@
+# packet_types.txt
+# Recognized packet type identifiers for FieldOps processing.
+MORNING_BRIEF
+MISSION_REQUEST
+MISSION_RESPONSE
+STATE_SAVE

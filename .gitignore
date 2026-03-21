@@ -1,0 +1,16 @@
+# Credentials — never commit
+config/credentials.env
+
+# Operational data — exclude live logs, inbox, processing, outbox, archive
+logs/activity/activity-log.txt
+logs/errors/error-log.txt
+inbox/
+processing/
+outbox/
+archive/
+artifacts/temp/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

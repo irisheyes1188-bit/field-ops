@@ -1,0 +1,6 @@
+# approved_senders.txt
+# Authorized senders for FieldOps packet intake.
+# One entry per line. Lines beginning with # are comments.
+
+guyl@ncat.org
+irisheyes1188@gmail.com
