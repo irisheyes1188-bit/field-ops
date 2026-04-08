@@ -1,14 +1,20 @@
 # Credentials — never commit
 config/credentials.env
+config/*credentials*.json
+config/*token*.json
+config/*key*.txt
+config/notion_token.txt
 
 # Operational data — exclude live logs, inbox, processing, outbox, archive
 logs/activity/activity-log.txt
 logs/errors/error-log.txt
+logs/
 inbox/
 processing/
 outbox/
 archive/
 artifacts/temp/
+plain_intake_log.txt
 
 # Python
 __pycache__/
