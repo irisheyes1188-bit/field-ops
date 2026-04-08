@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: fieldops-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server:app --bind 0.0.0.0:$PORT
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+    secretFiles:
+      - name: credentials.json
+        path: /etc/secrets/credentials.json
+      - name: token.json
+        path: /etc/secrets/token.json
+      - name: calendar_token.json
+        path: /etc/secrets/calendar_token.json
